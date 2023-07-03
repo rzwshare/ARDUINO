@@ -1,7 +1,5 @@
 /***************************************************
-// web: http://www.buydisplay.com
-EastRising Technology Co.,LTD
-Examples for ER-TFTM1.44-2 graphics test
+Examples for ER-TFTM1.4 graphics test
 Display is Hardward or Software SPI SPI 4-Wire SPI Interface  3.3V Power Supply
 NOTE: testOK:DUE    If you use MEGA and UNO board, you need to add level conversion.
 ****************************************************/
@@ -12,19 +10,6 @@ NOTE: testOK:DUE    If you use MEGA and UNO board, you need to add level convers
   *2. VCC    ->    3.3
   *3. SCL    ->    SCK
   *4. SDA    ->    MOSI
-  *5. RES    ->    8 
-  *6. DC     ->    9
-  *7. CS     ->    10
-  *8. BLK     ->    NC  
-*/
-
-/*
-  ==TFT Software SPI connection ==
-    OLED   =>    Arduino
-  *1. GND    ->    GND
-  *2. VCC    ->    3.3
-  *3. SCL    ->    13
-  *4. SDA    ->    11
   *5. RES    ->    8 
   *6. DC     ->    9
   *7. CS     ->    10
