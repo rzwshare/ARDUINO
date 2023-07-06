@@ -12,7 +12,7 @@
 1.基本信息：
 例程使用单独LCD模块进行了验证，支持arduino due/mega2560/uno
 
-
+待完善
 2.管脚连接：
 EPD  	->	  arduino
 VCC    	->    	3.3V
