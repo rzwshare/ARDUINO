@@ -1,4 +1,3 @@
-
 #ifndef _ST7796H_
 #define _ST7796H_
 

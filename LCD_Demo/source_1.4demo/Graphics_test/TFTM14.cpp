@@ -1,7 +1,3 @@
-/*************************************************** 
-  www.buydisplay.com
- ****************************************************/
-
 #include "TFTM14.h"
 #include <avr/pgmspace.h>
 #include <limits.h>

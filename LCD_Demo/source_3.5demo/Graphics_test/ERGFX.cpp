@@ -1,5 +1,3 @@
-
-
 #include "ERGFX.h"
 #include "glcdfont.c"
 #ifdef __AVR__

@@ -1,45 +1,40 @@
-/***************************************************
-Examples for ER-TFTM3.5 graphics test
-Display is Hardward or Software SPI SPI 4-Wire SPI Interface  3.3V Power Supply
-NOTE: testOK:DUE    If you use MEGA and UNO board, you need to add level conversion.
-****************************************************/
 /*
-  ==TFT Hardware SPI connection ==
+  ==TFT Software SPI connection ==
     OLED   =>    Arduino
   *1. GND    ->    GND
   *2. VCC    ->    3.3
-  *3. SCL    ->    SCK
-  *4. SDA    ->    MOSI
-  *5. RES    ->    8 
-  *6. DC     ->    9
-  *7. CS     ->    10
-  *8. BLK     ->    NC  
+  *3. RST    ->    10 
+  *4. DC     ->    9
+  *5. CS     ->    8
+  *6. BL    ->     11  
+  *7. SCL    ->    spi时钟引脚
+  *8. SDA    ->    spi数据引脚
 */
+
+
 #include "SPI.h"
 #include "ERGFX.h"
 #include "TFTM35.h"
 
 
-#define TFT_RST 9
-#define TFT_DC  6
-#define TFT_CS  10
-
-/*
-#define TFT_RST 8
+#define TFT_BL  11
+#define TFT_RST 10
 #define TFT_DC  9
-#define TFT_CS  10
-*/
+#define TFT_CS  8
+
 // If using the Hardware SPI
 ST7796 tft = ST7796(TFT_CS, TFT_DC,TFT_RST);
 
 // If using the Software SPI
 //#define TFT_CLK  13 
-//#define TFT_MOSI 11  
+//#define TFT_MOSI 12  
 //ST7796 tft = ST7796(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST);
 
 void setup() {
   Serial.begin(9600);
   Serial.println("ST7796 Test!"); 
+  pinMode(TFT_BL, OUTPUT);
+  digitalWrite(TFT_BL, HIGH);
   tft.begin();
 }
 

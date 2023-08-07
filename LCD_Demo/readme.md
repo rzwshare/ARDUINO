@@ -12,17 +12,16 @@
 1.基本信息：
 例程使用单独LCD模块进行了验证，支持arduino due/mega2560/uno
 
-待完善
 2.管脚连接：
-EPD  	->	  arduino
+lcd  	->	arduino
 VCC    	->    	3.3V
 GND    	->    	GND
-SDA    	->    	10(SPI0_MOSI)
-SCL    	->    	11(SPI0_SCK)
-CS     	->    	8(CE0)
-DC     	->    	25
-RST    	->    	27
-BL  	->    	NULL
+SDA    	->    	spi数据引脚
+SCL    	->    	spi时钟引脚
+CS     	->    	8
+DC     	->    	9
+RST    	->    	10
+BL  	->    	11
 
 
 3.例程使用方法：
